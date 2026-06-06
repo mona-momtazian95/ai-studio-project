@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Dark green gradient for the circular frame and main serif Y -->
+    <linearGradient id="primary-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e6522" />
+      <stop offset="100%" stop-color="#3c4e1a" />
+    </linearGradient>
+    
+    <!-- Shading gradient for the upper segment of the leaf -->
+    <linearGradient id="leaf-light" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#769833" />
+      <stop offset="100%" stop-color="#8ba446" />
+    </linearGradient>
+
+    <!-- Shading gradient for the lower segment of the leaf -->
+    <linearGradient id="leaf-dark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#44591e" />
+      <stop offset="100%" stop-color="#556e25" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Outer Border -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#primary-green)" stroke-width="5.5" />
+
+  <!-- Classic Serif Letter Y -->
+  <!-- Designed with proportional vertical base stem, serif bottom slab, and symmetric left and right arms with terminal slabs -->
+  <path d="
+    M 78 142 
+    h 44 
+    v -6 
+    h -14 
+    v -28 
+    L 142 66 
+    h 10 
+    v -6 
+    H 116 
+    v 6 
+    h 7 
+    L 100 101
+    L 77 66 
+    h 7 
+    v -6 
+    H 48 
+    v 6 
+    h 10 
+    l 28 42
+    v 28 
+    H 78 
+    v 6 
+    Z
+  " fill="url(#primary-green)" />
+
+  <!-- Elegant Leaf Overlay -->
+  <!-- Represents a custom botanical element growing from the Y fork, wrapping over the right arm -->
+  <g>
+    <!-- Upper Leaf Half -->
+    <path d="
+      M 98 103 
+      C 106 91, 126 62, 151 60 
+      C 140 76, 122 88, 107 100
+      Z
+    " fill="url(#leaf-light)" />
+    
+    <!-- Lower Leaf Half -->
+    <path d="
+      M 98 103 
+      C 107 100, 122 88, 151 60
+      C 142 90, 114 116, 98 103
+      Z
+    " fill="url(#leaf-dark)" />
+    
+    <!-- Smooth Leaf Middle Stem Divider (Vein) -->
+    <path d="
+      M 98 103 
+      C 107 100, 122 88, 151 60
+    " fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.4" />
+  </g>
+</svg>
