@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Yektai Dental Clinic",
+  "description": "Premium multi-lingual website for Yektai Dental Clinic, featuring an AI dental assistant, seamless appointment booking, live digital invoicing, and downloadable interactive business cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
